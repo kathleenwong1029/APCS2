@@ -1,0 +1,34 @@
+Kathleen Wong
+APCS2 pd2
+HW09 --- Yaaass Queens
+2018-02-27
+
+2x2
+A 2x2 board is not solvable because a queen placed anywhere on the board can
+move to any other location.
+
+3x3 
+A 3x3 board is also not solvable because the board is too still too small to 
+allow three queens on the board. Once two queens are placed on the board,
+there is no other location available.
+
+4x4
+A 4x4 board is solvable because if you start by placing a queen in the square
+one horizontally next to the corner, and then continue placing queens one next
+to its diagonal, the board is solved. There are 4 solutions.
+
+5x5
+A 5x5 board is solvable because if you start by placing a queen in the corner
+and then continue placing queens one next to its diagonal, the board is 
+solved. There are are 8 solutions.
+
+6x6 
+The same as 4x4.
+
+7x7
+The same as 5x5.
+
+8x8
+A 8x8 board is not solvable because when using the method of placing queens
+one next to the former's diagonal, the last queen will always be in the
+path of another queen diagonally.

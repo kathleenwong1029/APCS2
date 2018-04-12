@@ -1,0 +1,13 @@
+Kathleen Wong
+APCS2 pd2
+HW11 -- Get on the Bus
+2018-03-01
+
+Knight Tour Also
+
+Begin at leftmost column
+1) Place the knight in the first available spot and update counter
+2) Move knight to next possible spot (check all 8 possibilities) 
+	Continue 1) until x-cor or y-cor are out of board range
+		 2) case where all eight possible locations are blocked
+		 3) counter has reached n x n

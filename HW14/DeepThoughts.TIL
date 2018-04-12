@@ -1,0 +1,40 @@
+Kathleen Wong
+APCS2 pd2
+HW14 -- Probing the Depths...
+2018-03-06
+
+Mean execution times for boards of size n*n:
+  n=5   .153 s over 10 executions
+  n=6   .174s over 10 executions
+  n=7   .345 s over 10 executions
+  n=8   .381 s over 10 executions
+
+Section Uno:
+
+Q1: From any starting position, can an open tour always be found? Explain.
+An open tour cannot always be found because when I tested other starting
+points using KnightTour, some positions could not produce a solution
+such a (1,2).
+
+Q2: Same, but for closed tour.
+A closed tour cannot be found from any location because a closed tour has
+even more restrictions thaan an open tour, given that it has to end
+at a certain location. If a solution is not available from every location,
+for an open tour, it can be inferred that the same would happen for a closed
+tour.
+
+Q3: How do you explain the increase in execution time as n increases?
+I would say that the runtime of KnightTour is O(8n^2) so as n increases,
+the time increases exponentially.
+
+Q4: Thoughts on optimization?
+KnightTour could be optimized by commenting out the print statements
+and delays. One could also block out former paths that would not work,
+minimizing the possible locations.
+
+Section Deux:
+1)Move to next possible location (checking right, up , down , left)
+2)Mark former position with another symbol
+3)Repeat step 1 until on the exit location
+	1-If hero land on a wall, go back one step
+	2-If there is no possible location, backtrack to original position
